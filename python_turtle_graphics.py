@@ -1,13 +1,19 @@
-from turtle import *
-speed(0)
-rt(90)
+import turtle
+
+t = turtle.Turtle()
+t.pencolor("red")
+t.speed(0)
+t.rt(90)
+
 def square():
     for x in range(10):
-        fd(50)
-        lt(36)
+        t.fd(50)
+        t.lt(36)
+
 def ornamentThingy():
-    for x in range(21):
+    for x in range(23):
         square()
-        lt(10)
+        t.lt(10)
+
 ornamentThingy()
-done()
+turtle.done()
